@@ -1,0 +1,181 @@
+/* CSS Reset (tùy chọn, giúp thống nhất style trên các trình duyệt) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Chọn font chữ phù hợp */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Màu nền trang */
+}
+
+.container {
+    max-width: 1200px; /* Giới hạn chiều rộng nội dung chính */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px; /* Khoảng cách giữa các section */
+}
+
+.section-title {
+    font-size: 2rem; /* Kích thước tiêu đề section */
+    margin-bottom: 20px;
+    color: #0056b3; /* Màu tiêu đề section */
+    text-align: center; /* Căn giữa tiêu đề section */
+}
+
+/* --- Book List Section --- */
+#book-list .book-grid {
+    display: grid; /* Vẫn sử dụng CSS Grid */
+    grid-template-columns: repeat(1000, minmax(250px, 1fr)); /* Rất nhiều cột, mỗi cột min 250px */
+    gap: 25px; /* Khoảng cách giữa các book card */
+    overflow-x: auto; /* Thêm scroll ngang khi nội dung tràn */
+    overflow-y: hidden; /* Ẩn scroll dọc (chỉ cần scroll ngang) */
+    grid-auto-flow: column; /* Xếp các item theo cột, rồi đến hàng */
+    padding-bottom: 20px; /* Thêm padding dưới để thấy rõ scrollbar (tùy chỉnh) */
+}
+
+#book-list {
+    overflow: hidden; /* Ẩn scrollbar dọc của section nếu cần (tùy chỉnh) */
+}
+
+
+.book-card {
+    background-color: #fff; /* Màu nền book card */
+    border-radius: 8px;
+    overflow: hidden; /* Ẩn nội dung tràn ra ngoài border-radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    transition: transform 0.3s ease; /* Hiệu ứng hover nhẹ */
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-5px); /* Nâng card lên khi hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn khi hover */
+}
+
+.book-cover {
+    width: 100%; /* Ảnh bìa sách full width */
+    height: 200px; /* Chiều cao ảnh bìa sách (tùy chỉnh) */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi resize */
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+}
+
+.book-card-body {
+    padding: 20px;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Màu nút xem chi tiết */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Căn giữa chữ trong nút */
+}
+
+.book-button:hover {
+    background-color: #0056b3; /* Màu nút đậm hơn khi hover */
+}
+
+
+/* --- About Section --- */
+#about .about-content {
+    text-align: justify; /* Căn đều đoạn văn */
+}
+
+/* --- Articles Section --- */
+#articles .article-list {
+    display: grid; /* Sử dụng CSS Grid cho danh sách bài viết */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Khoảng cách giữa các bài viết */
+}
+
+.article-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.article-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.article-excerpt {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.article-button {
+    display: inline-flex; /* Flexbox cho nút và icon */
+    align-items: center; /* Căn giữa icon và chữ */
+    padding: 10px 15px;
+    background-color: #28a745; /* Màu nút bài viết */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.article-button:hover {
+    background-color: #1e7e34; /* Màu nút đậm hơn khi hover */
+}
+
+.article-button i {
+    margin-left: 8px; /* Khoảng cách giữa chữ và icon */
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Giảm padding container trên mobile */
+    }
+
+    .section-title {
+        font-size: 1.75rem; /* Giảm kích thước tiêu đề section trên mobile */
+    }
+
+    #book-list .book-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columns hẹp hơn trên mobile */
+    }
+
+    .book-card {
+        text-align: center; /* Căn giữa nội dung book card trên mobile */
+    }
+
+    .book-cover {
+        height: 150px; /* Giảm chiều cao ảnh bìa trên mobile */
+    }
+
+    #articles .article-list {
+        grid-template-columns: 1fr; /* 1 cột trên mobile */
+    }
+}

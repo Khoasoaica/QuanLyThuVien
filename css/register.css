@@ -1,0 +1,78 @@
+/* ================== Register Page Styles ================== */
+.register-page-container {
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea); /* Subtle gradient background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add some padding around the container */
+}
+
+.register-card-container {
+    max-width: 500px; /* Slightly narrower card */
+    width: 100%;
+}
+
+.register-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+.register-card .card-body {
+    padding: 3rem; /* Increased padding inside card body */
+}
+
+.register-title {
+    font-size: 2.5rem; /* Larger title */
+    color: #263238; /* Darker title color */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.register-subtitle {
+    color: #546e7a; /* Muted subtitle color */
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.register-label {
+    color: #37474f; /* Darker label color */
+    font-weight: 500;
+}
+
+.register-input {
+    border: 1px solid #cfd8dc; /* Light border for inputs */
+    padding: 1rem; /* Increased input padding */
+    font-size: 1rem;
+    color: #455a64; /* Input text color */
+}
+
+.register-input:focus {
+    border-color: #00bcd4; /* Highlight color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25); /* Focus shadow */
+}
+
+.register-button {
+    padding: 1rem 1.5rem; /* Button padding */
+    font-size: 1.2rem; /* Larger button text */
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.register-button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
+}
+
+.register-login-link {
+    color: #0097a7; /* Link color */
+    font-weight: 500;
+}
+
+.register-login-link:hover {
+    color: #00bcd4; /* Link hover color */
+    text-decoration: underline;
+}

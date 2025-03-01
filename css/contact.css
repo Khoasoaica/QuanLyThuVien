@@ -1,0 +1,170 @@
+#contact-page .contact-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px; /* Tăng padding tổng thể */
+    background-color: #f8f9fa; /* Màu nền nhạt hơn cho khu vực nội dung */
+    border-radius: 10px; /* Bo tròn góc khu vực nội dung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Bóng đổ nhẹ nhàng */
+}
+
+#contact-page .contact-section {
+    margin-bottom: 40px; /* Tăng khoảng cách giữa các section */
+}
+
+#contact-page .contact-section:last-child {
+    margin-bottom: 0; /* Loại bỏ margin bottom cho section cuối cùng */
+}
+
+#contact-page .contact-section-title {
+    font-size: 2.2em; /* Tăng kích thước tiêu đề section */
+    color: #2d3748; /* Màu tiêu đề đậm hơn, chuyên nghiệp hơn */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4299e1; /* Đường gạch chân tiêu đề màu xanh đậm hơn */
+    padding-bottom: 12px;
+    text-transform: uppercase; /* In hoa tiêu đề section */
+    letter-spacing: 1px; /* Tăng khoảng cách chữ cái */
+}
+
+#contact-page .contact-info-list {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-page .contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các item thông tin */
+}
+
+#contact-page .contact-info-icon {
+    margin-right: 15px; /* Tăng margin phải của icon */
+    color: #4299e1; /* Màu icon xanh đậm hơn */
+    font-size: 1.4em; /* Tăng kích thước icon */
+}
+
+#contact-page .contact-info-text {
+    font-size: 1.1em; /* Tăng kích thước chữ thông tin liên hệ */
+    color: #4a5568; /* Màu chữ thông tin liên hệ dịu mắt hơn */
+}
+
+#contact-page .contact-info-text a {
+    color: #4299e1; /* Màu link xanh đậm hơn */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact-page .contact-info-text a:hover {
+    color: #2b6cb0; /* Màu link đậm hơn khi hover */
+}
+
+#contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px; /* Tăng max-width cho form */
+}
+
+#contact-page .form-group {
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các group form */
+}
+
+#contact-page .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Tăng margin bottom label */
+    font-weight: 500; /* Font weight trung bình cho label */
+    color: #2d3748; /* Màu label đậm hơn */
+    font-size: 1.1em; /* Tăng kích thước label */
+}
+
+#contact-page .form-group input,
+#contact-page .form-group textarea {
+    width: 100%;
+    padding: 12px 15px; /* Tăng padding input và textarea */
+    border: 2px solid #e2e8f0; /* Border dày hơn, màu nhạt hơn cho input và textarea */
+    border-radius: 8px; /* Bo tròn góc input và textarea */
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #fff; /* Màu nền trắng cho input và textarea */
+    transition: border-color 0.3s ease; /* Transition cho border color khi focus */
+}
+
+#contact-page .form-group input:focus,
+#contact-page .form-group textarea:focus {
+    outline: none; /* Loại bỏ outline mặc định khi focus */
+    border-color: #4299e1; /* Border color xanh đậm hơn khi focus */
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2); /* Bóng đổ nhẹ khi focus */
+}
+
+
+#contact-page .form-group textarea {
+    resize: vertical;
+    min-height: 150px; /* Tăng chiều cao tối thiểu textarea */
+}
+
+#contact-page .submit-button {
+    padding: 14px 30px; /* Tăng padding button */
+    background-color: #2d3748; /* Màu nút submit tối màu, chuyên nghiệp */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bo tròn góc nút submit */
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: 500; /* Font weight trung bình cho nút submit */
+    text-transform: uppercase; /* In hoa nút submit */
+    letter-spacing: 0.5px; /* Tăng khoảng cách chữ cái nút submit */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm transition transform */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bóng đổ nhẹ cho nút submit */
+}
+
+#contact-page .submit-button:hover {
+    background-color: #4a5568; /* Màu nút submit sáng hơn khi hover */
+    transform: translateY(-2px); /* Nhấc nhẹ nút submit lên khi hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Bóng đổ đậm hơn khi hover */
+}
+
+#contact-page .submit-button:active {
+    transform: translateY(0); /* Đưa nút submit về vị trí ban đầu khi active */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bóng đổ nhỏ lại khi active */
+}
+
+
+#contact-page .contact-map {
+    width: 100%;
+    height: 400px; /* Tăng chiều cao bản đồ */
+    border: none; /* Loại bỏ border mặc định của iframe */
+    border-radius: 10px; /* Bo tròn góc bản đồ */
+    margin-top: 30px; /* Tăng margin top bản đồ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bóng đổ nhẹ cho bản đồ */
+}
+
+#contact-page .map-note {
+    margin-top: 15px; /* Tăng margin top cho ghi chú bản đồ */
+    font-size: 0.95em; /* Tăng kích thước chữ ghi chú bản đồ */
+    color: #718096; /* Màu chữ ghi chú bản đồ dịu mắt hơn */
+    font-style: italic; /* In nghiêng ghi chú bản đồ */
+}
+
+
+@media (min-width: 768px) {
+    #contact-page .contact-content {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 40px; /* Tăng padding cho màn hình lớn */
+    }
+
+    #contact-page .contact-section {
+        margin-right: 60px; /* Tăng margin right giữa các section */
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    #contact-page .contact-form {
+        max-width: none;
+    }
+
+    #contact-page .contact-map {
+        flex: 1.3; /* Giảm flex của bản đồ một chút để cân đối */
+        margin-top: 0;
+        margin-left: 30px; /* Tăng margin trái cho bản đồ */
+    }
+}

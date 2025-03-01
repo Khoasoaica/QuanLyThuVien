@@ -1,0 +1,147 @@
+.footer {
+    background-color: #f0f0f0; /* Màu nền footer */
+    padding: 40px 0; /* Khoảng cách trên dưới footer chính */
+    color: #555; /* Màu chữ footer chung */
+    font-size: 14px;
+}
+
+.footer-inner {
+    display: flex; /* Bố cục flexbox cho các cột footer */
+    justify-content: space-between; /* Chia đều khoảng cách giữa các cột */
+    max-width: 1200px; /* Giới hạn chiều rộng nội dung */
+    margin: 0 auto; /* Căn giữa footer */
+    padding: 0 20px; /* Khoảng cách lề trái phải */
+}
+
+.footer-column {
+    width: 30%; /* Chiều rộng mỗi cột (khoảng 3 cột) */
+}
+
+.footer-column h3 {
+    color: #333; /* Màu tiêu đề cột */
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p, .footer-column ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none; /* Loại bỏ dấu chấm mặc định của danh sách */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px; /* Khoảng cách giữa các link */
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0; /* Loại bỏ khoảng cách dưới link cuối cùng */
+}
+
+.footer-links a {
+    color: #555; /* Màu link footer */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Hiệu ứng màu khi hover */
+}
+
+.footer-links a:hover {
+    color: #007bff; /* Màu link khi hover (ví dụ: xanh dương) */
+}
+
+.footer-social {
+    font-size: 24px; /* Kích thước biểu tượng mạng xã hội */
+}
+
+.footer-social a {
+    color: #777; /* Màu biểu tượng mạng xã hội */
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #333; /* Màu biểu tượng khi hover */
+}
+
+.footer-bottom {
+    background-color: #e0e0e0; /* Màu nền footer bottom */
+    padding: 15px 0; /* Khoảng cách trên dưới footer bottom */
+    text-align: center; /* Căn giữa chữ footer bottom */
+    font-size: 12px;
+}
+
+.footer-bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Flexbox cho footer bottom */
+    justify-content: space-between; /* Chia đều khoảng cách copyright và links */
+    align-items: center; /* Căn giữa dọc */
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Links footer bottom dạng hàng ngang */
+}
+
+.footer-bottom-links li {
+    margin-left: 20px; /* Khoảng cách giữa các link bottom */
+}
+
+.footer-bottom-links li:first-child {
+    margin-left: 0; /* Loại bỏ khoảng cách trái link đầu tiên */
+}
+
+.footer-bottom-links a {
+    color: #777; /* Màu link bottom */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #555; /* Màu link bottom khi hover */
+}
+
+
+/* Responsive cho Mobile (điều chỉnh theo breakpoint của bạn) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0; /* Giảm padding trên mobile */
+        text-align: center; /* Căn giữa chữ footer trên mobile */
+    }
+
+    .footer-inner {
+        flex-direction: column; /* Xếp cột dọc trên mobile */
+        align-items: center; /* Căn giữa các cột theo chiều ngang */
+        padding: 0 15px; /* Giảm padding lề trái phải trên mobile */
+    }
+
+    .footer-column {
+        width: 100%; /* Chiều rộng cột 100% trên mobile */
+        margin-bottom: 30px; /* Khoảng cách giữa các cột khi xếp dọc */
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0; /* Loại bỏ khoảng cách dưới cột cuối cùng */
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column; /* Xếp dọc footer bottom trên mobile */
+        text-align: center; /* Căn giữa chữ footer bottom trên mobile */
+    }
+
+    .footer-bottom-links {
+        flex-direction: column; /* Xếp dọc links bottom trên mobile */
+        align-items: center; /* Căn giữa links bottom */
+    }
+
+    .footer-bottom-links li {
+        margin-left: 0; /* Loại bỏ khoảng cách trái link bottom */
+        margin-bottom: 10px; /* Khoảng cách giữa các link bottom khi xếp dọc */
+    }
+}

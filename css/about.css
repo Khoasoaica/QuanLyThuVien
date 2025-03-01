@@ -1,0 +1,62 @@
+ /* ... (Toàn bộ CSS Styles từ phản hồi trước vẫn giữ nguyên) ... */
+ #about-page .about-content {
+    line-height: 1.8;
+    color: #555;
+}
+
+#about-page .about-section-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+#about-page .about-subsection-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#about-page .about-image {
+    float: right;
+    width: 350px; /* Tăng kích thước ảnh lên một chút */
+    border-radius: 10px;
+    margin-left: 30px; /* Tăng margin trái */
+    margin-bottom: 30px; /* Tăng margin dưới */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.15); /* Tăng độ đậm bóng đổ */
+}
+
+#about-page .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; /* Tăng margin trên */
+    margin-bottom: 50px; /* Tăng margin dưới */
+}
+
+#about-page .mission-vision-item {
+    flex: 1;
+    padding: 30px; /* Tăng padding bên trong box */
+    border: 2px solid #ddd; /* Tăng độ dày border */
+    border-radius: 10px; /* Tăng độ cong góc */
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-page .mission-vision-item:hover {
+    transform: translateY(-8px); /* Tăng độ nhấc lên khi hover */
+    box-shadow: 8px 15px 25px rgba(0,0,0,0.2); /* Bóng đổ đậm hơn khi hover */
+}
+
+#about-page .mission-vision-title {
+    font-size: 2.2em; /* Tăng kích thước tiêu đề */
+    color: #007bff;
+    margin-bottom: 20px; /* Tăng margin dưới */
+}
+
+#about-page .mission-vision-text {
+    font-size: 1.2em; /* Tăng kích thước chữ */
+    line-height: 1.7; /* Tăng khoảng cách dòng */
+}
